@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dairy App</title>
+  </head>
+  <body>
+    <h1>Are you sure you want to Delete Dairy?</h1>
+    <form action="/dairy/<%= id %>/?_method=Delete" method="post">
+      <input type="submit" value="Yes, Delete <%= dairy.name %>" />
+    </form>
+    <button><a href="/dairy/<%= id %>">No</a></button>
+  </body>
+</html>

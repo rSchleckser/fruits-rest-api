@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fruit.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo"><span class="single-text"></span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <!-- total of 5 'a' tags -->
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/fruits">Fruits</a>
+        <a href="/meats">Meats</a>
+        <a href="/veggies">Veggies</a>
+        <a href="/seafood">Seafood</a>
+        <a href="/Dairy">Dairy</a>
+      </nav>
+    </header>
+
+    <section class="landing">
+      <div class="container">
+        <div class="image-row">
+          <div class="image-wrapper">
+            <div class="image-overlay">
+              <h2>Meats</h2>
+            </div>
+            <img src="/img/meats.jpg" alt="Image 1" width="275" height="325" />
+          </div>
+          <div class="image-wrapper">
+            <img
+              src="/img/fruits/fruits.jpg"
+              alt="Image 2"
+              width="275"
+              height="325"
+            />
+          </div>
+          <div class="image-wrapper">
+            <img
+              src="/img/veggies.jpg"
+              alt="Image 3"
+              width="275"
+              height="325"
+            />
+          </div>
+          <div class="image-wrapper">
+            <img src="/img/dairy2.jpg" alt="Image 4" width="275" height="325" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-container">
+      <img src="/img/veggies.jpg" alt="Your Image" width="275" height="325" />
+      <div class="text-overlay">
+        <h2>More About recipes</h2>
+        <p>Description</p>
+        <a href="#">Link to More</a>
+      </div>
+    </section>
+
+    <section class="image-container">
+      <img src="/img/veggies.jpg" alt="Your Image" width="275" height="325" />
+      <div class="text-overlay">
+        <h2>More About recipes</h2>
+        <p>Description</p>
+        <a href="#">Link to More</a>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <h2>Sign up to receive Recipes</h2>
+      <div class="contact-form">
+        <form action="/" method="POST">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            autocomplete="off"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

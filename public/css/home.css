@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Playfair Display', sans-serif;
+}
+:root {
+  --bg-color: #a79277;
+  --second-bg-color: #d1bb9e;
+  /* #d1bb9e; */
+  --text-color: #ead8c0;
+  --main-color: #fff2e1;
+  /* #fff2e1; */
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color);
+}
+
+.timeline-column .timeline-box {
+  position: relative;
+  border-left: 2px solid var(--text-color);
+  margin-top: 20rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  color: var(--main-color);
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/* more  */
+
+.container {
+  max-width: 79%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Landing section styles */
+
+.landing h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 1.2em;
+}
+
+/* Sections styles */
+section {
+  padding: 50px 0;
+}
+/* ==========Landing Section======== */
+.landing {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.image-wrapper {
+  width: 70%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.image-wrapper:last-child {
+  margin-right: 0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay h2,
+.image-overlay p {
+  margin: 0;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 20%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.container h2 {
+  margin-bottom: 30px;
+}
+
+/*============= aside======== */
+.image-container {
+  position: relative;
+}
+.image-container:nth-child(even) {
+  background: var(--main-color);
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-overlay h2,
+.text-overlay p,
+.text-overlay a {
+  margin: 0 0 10px;
+}
+
+.text-overlay a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.image-container img {
+  display: block;
+  width: 20%;
+  max-height: 700px;
+}
+
+/* ============== Contacts Form========*/
+.contact-section {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  text-align: center;
+}
+
+.contact-form label,
+.contact-form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Style the input fields */
+input[type='text'],
+input[type='email'],
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type='text'],
+input[type='email'] {
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+  color: #fff;
+}
+
+/* Style the submit button */
+input[type='submit'] {
+  background-color: var(--bg-color);
+  color: white;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}

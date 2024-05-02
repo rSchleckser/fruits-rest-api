@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Dairy</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><span class="single-text"></span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <!-- total of 5 'a' tags -->
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/fruits">Fruits</a>
+        <a href="/meats">Meats</a>
+        <a href="/veggies">Veggies</a>
+        <a href="/seafood">Seafood</a>
+        <a href="/Dairy">Dairy</a>
+      </nav>
+    </header>
+    <section class="timeline">
+      <div class="timeline-row">
+        <div class="timeline-column">
+          <h2 class="title">
+            <span class="single-text"></span>
+          </h2>
+          <div class="timeline-box">
+            <% for( let index = 0; index < allDairy.length; index++ ) { %> <%
+            let dairy = allDairy[index] %>
+            <div class="timeline-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>2021 - 2022
+                </div>
+                <h3><%= dairy.name %></h3>
+                <a href="/dairy/new">Create a New Dairy Item</a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                  voluptate natus consectetur suscipit aspernatur quos obcaecati
+                  dolore veniam debitis omnis.
+                </p>
+
+                <img
+                  src="<%= dairy.img %>"
+                  alt="Your Image"
+                  width="275"
+                  height="325"
+                />
+                <button>
+                  <a href="/dairy/<%= index %>">Checkout more...</a>
+                </button>
+              </div>
+            </div>
+            <div></div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/js/dairy.js"></script>
+  </body>
+</html>
